@@ -55,3 +55,10 @@ Monthly backup of selected collections
 
 🚀 Deploying Updates
 If you make changes to the extension code:
+git add .
+git commit -m "Update backup logic"
+git push origin main
+
+Then reinstall or update the extension in your Firebase project:
+
+firebase ext:update <your-username>/backup-firestore-to-storage
