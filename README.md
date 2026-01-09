@@ -62,3 +62,18 @@ git push origin main
 Then reinstall or update the extension in your Firebase project:
 
 firebase ext:update <your-username>/backup-firestore-to-storage
+Tips
+- Use Coldline storage for cost‑efficient long‑term backups.
+- Add lifecycle rules to auto‑delete backups older than 12 months.
+- Test with a manual export:
+gcloud firestore export gs://YOUR_BUCKET/test-run
+
+License
+Apache 2.0
+
+
+---
+
+✅ Copy this block into a file called `README.md` in your repo. It’s already formatted for GitHub, so it will render nicely.  
+
+Would you like me to also prepare a **ready‑to‑copy `extension.yaml`** file in the same format, so you can drop it alongside this README and have a complete working extension package?
